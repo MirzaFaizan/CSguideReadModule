@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.developmethis.csguide.csguidereadmodule.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select From the following Modules to read"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3"
+                android:rowCount="3">
+                <Button
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="Module 1"
+                    android:id="@+id/one"
+                    android:onClick="wow"
+                    />
+                <Button
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:text="Module 2"
+                    android:id="@+id/two"
+                    />
+                <Button
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:text="Module 2"
+                    android:id="@+id/three"/>
+                <Button
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:text="Module 1"
+                    android:id="@+id/four"
+                    />
+                <Button
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:text="Module 5"
+                    android:id="@+id/five"
+                    />
+                <Button
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:text="Module 2"
+                    android:id="@+id/six"/>
+            </GridLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
